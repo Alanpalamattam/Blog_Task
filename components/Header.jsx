@@ -3,7 +3,7 @@ import Image from "next/image";
 import menyImg from "@/public/assets/meny.jpeg";
 import SearchBar from "./Searchbar";
 import { Globe } from "lucide-react";
-export default function Header({onSearch}) {
+export default function Header({ onSearch }) {
   const navigation = [
     { name: "Hotel", href: "/" },
     { name: "Flight", href: "/" },
@@ -35,7 +35,7 @@ export default function Header({onSearch}) {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
+           
           <nav className="flex items-center space-x-6 mt-1">
             {navigation.map((item) => (
               <Link
@@ -48,9 +48,8 @@ export default function Header({onSearch}) {
             ))}
           </nav>
 
-          {/* Right Section */}
           <div className="flex items-center space-x-4">
-            <SearchBar onSearch={onSearch}/>
+            <SearchBar onSearch={onSearch} />
           </div>
         </div>
         <div className="flex items-center gap-4.5 mr-4">
@@ -84,7 +83,7 @@ export default function Header({onSearch}) {
             width={26}
             height={26}
             className="rounded-full"
-          /> 
+          />
           <h2 className="text-white text-[12px] font-semibold">
             Theodore Reginald
           </h2>
