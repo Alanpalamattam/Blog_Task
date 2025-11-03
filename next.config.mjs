@@ -2,6 +2,18 @@
 const nextConfig = {
   /* config options here */
   reactStrictMode: true,
+    images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.pinimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'randomuser.me',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
