@@ -108,7 +108,7 @@ const Blogsection = ({ blogs = [], searchQuery = "" }) => {
 
                   <div className="flex items-center gap-2 mt-4">
                     <Image
-                      src={blog.authorimage}
+                      src={blog.authorimage||"/assets/meny.jpeg"}
                       alt=""
                       width={32}
                       height={32}
